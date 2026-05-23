@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Mail, Phone, Menu, X, ChevronDown, Leaf } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Mail, Phone, Menu, X, Leaf } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,9 +16,9 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', href: '#' },
     { name: 'About Us', href: '#about' },
-    { name: 'Products', href: '#products', hasDropdown: true },
+    { name: 'Products', href: '#products' },
+    { name: 'Gallery', href: '#gallery' },
     { name: 'Certificates', href: '#certificates' },
-    { name: 'Blogs', href: '#blogs' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -62,7 +62,6 @@ const Navbar = () => {
                   className="flex items-center text-gray-700 hover:text-primary-600 font-medium transition-colors py-2"
                 >
                   {link.name}
-                  {link.hasDropdown && <ChevronDown className="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform duration-200" />}
                 </a>
               </div>
             ))}
