@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import { Camera, Eye, X, ZoomIn } from 'lucide-react';
 
-import spoonImage from '../assets/banana-powder-spoon.jpg';
-import ojasagroImage from '../assets/banana-powder-leaf-ojasagro.jpg';
-import closeImage from '../assets/banana-powder-leaf-close.jpg';
-import bowlImage from '../assets/banana-powder-bowl.jpg';
+// Dynamically import all gallery JPEG images
+const images = import.meta.glob('../assets/gallery/*.jpeg', { eager: true, as: 'url' });
 
 interface GalleryItem {
   id: number;
@@ -14,36 +12,22 @@ interface GalleryItem {
   description: string;
 }
 
-const galleryItems: GalleryItem[] = [
-  {
-    id: 1,
-    src: ojasagroImage,
-    title: 'Pure Dehydrated Pile',
-    tag: 'Production Quality',
-    description: 'Freshly milled raw green banana powder resting on an organic banana leaf, showing the fine, consistent texture of our export-grade processing.'
-  },
-  {
-    id: 2,
-    src: spoonImage,
-    title: 'Precision Sourced Ingredient',
-    tag: 'Ethical Sourcing',
-    description: 'A perfect scoop of our 100% natural, preservative-free green banana powder, illustrating its organic beige coloration and pure composition.'
-  },
-  {
-    id: 3,
-    src: bowlImage,
-    title: 'Bulk Export Presentation',
-    tag: 'Flagship Packaging',
-    description: 'Our final flagship Green Banana Powder styled with fresh raw bananas, perfect for global health food brands, baking companies, and nutrition brands.'
-  },
-  {
-    id: 4,
-    src: closeImage,
-    title: 'Close-Up Micro Texture',
-    tag: 'Strict QA Control',
-    description: 'Highly detailed view of the banana powder grains. No clumping, zero external starch, processed in sterile and climate-controlled settings.'
-  }
-];
+const galleryItems: GalleryItem[] = Object.entries(images).map(([path, url], index) => {
+  const fileName = path.split('/').pop() ?? `Image ${index + 1}`;
+  const title = fileName.replace(/\.jpeg$/i, '').replace(/_/g, ' ');
+  // Extract date and time from WhatsApp filename pattern
+  const match = fileName.match(/WhatsApp Image (\d{4}-\d{2}-\d{2}) at ([\d.]+ [AP]M)/);
+  const description = match
+    ? `Premium product showcase captured on ${match[1]} at ${match[2]}. Experience the excellence of our green banana powder.`
+    : 'Premium product image highlighting the superior quality of our green banana powder.';
+  return {
+    id: index + 1,
+    src: url as string,
+    title,
+    tag: 'Gallery',
+    description,
+  } as GalleryItem;
+});
 
 const Gallery: React.FC = () => {
   const [activeItem, setActiveItem] = useState<GalleryItem | null>(null);

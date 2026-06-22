@@ -146,6 +146,11 @@ const Footer = () => {
             <a href="#contact" className="hover:text-white transition-colors">Terms of Service</a>
             <a href="#contact" className="hover:text-white transition-colors">Shipping & MOQ Terms</a>
           </div>
+          <div className="mt-4 text-xs text-gray-400">
+            <p className="mb-1"><strong>GST No:</strong> 27AAZFN8041K1ZG</p>
+            <p className="mb-1"><strong>Contact:</strong> Sumit Kale – +91 83290 95601 | Siddhesh Patil – +91 70201 69335</p>
+            <p className="mb-1"><strong>Email:</strong> <a href="mailto:nutrivaglobalexport@gmail.com" className="underline hover:text-white">nutrivaglobalexport@gmail.com</a></p>
+          </div>
         </div>
 
       </div>
