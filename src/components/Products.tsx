@@ -1,6 +1,11 @@
 import React from 'react';
 import { MessageSquare, ArrowRight } from 'lucide-react';
-import bananaPowderLeafClose from '../assets/banana-powder-leaf-close.jpg';
+import bananaPowderLeafClose from "../assets/banana-powder-leaf-close.jpg";
+import rawBananaPowder from '../assets/gallery/raw-banana-powder.jpg';
+import onionPowder from '../assets/gallery/onion-powder.jpg';
+import garlicPowder from '../assets/gallery/garlic-powder.jpg';
+import tomatoPowder from '../assets/gallery/tomato-powder.jpg';
+import turmericPowder from '../assets/gallery/turmeric-powder.jpg';
 
 interface Product {
   id: number;
@@ -17,46 +22,46 @@ interface ProductsProps {
 const products: Product[] = [
   {
     id: 1,
-    name: 'Premium Green Banana Powder',
+    name: 'G9 Banana Powder',
     category: 'Dehydrated Powders',
     image: bananaPowderLeafClose,
-    description: '100% natural, rich in resistant starch, gluten-free, and ideal for healthy food manufacturing, baking, and nutritional supplement brands.'
+    description: 'Premium quality G9 banana powder processed hygienically for food, bakery and nutraceutical industries.'
   },
   {
-    id: 2,
-    name: 'Garlic Powder',
-    category: 'Dehydrated Powders',
-    image: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    description: '100% pure garlic powder, ideal for adding rich flavor to food blends, marinades, sauces, and dry rubs.'
-  },
-  {
-    id: 3,
-    name: 'Red Onion Granules',
-    category: 'Flakes & Granules',
-    image: 'https://images.unsplash.com/photo-1615486171448-4fd6d17b8f9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    description: 'Enhance your food applications with the slightly sweet and tangy taste of red onion granules.'
-  },
-  {
-    id: 4,
-    name: 'Curry Leaves Powder',
-    category: 'Spices Powder',
-    image: 'https://images.unsplash.com/photo-1599940824399-b87987ceb72a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    description: 'Authentic Indian aroma and flavor, perfect for seasoning traditional culinary recipes.'
-  },
-  {
-    id: 5,
-    name: 'Ginger Dehydrated Powder',
-    category: 'Dehydrated Powders',
-    image: 'https://images.unsplash.com/photo-1615485458936-a66426db4806?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    description: 'Strong, pungent ginger flavor retained through careful hygienic dehydration processes.'
-  },
-  {
-    id: 6,
-    name: 'Tamarind Powder',
-    category: 'Spices Powder',
-    image: 'https://images.unsplash.com/photo-1621317752520-2ce3270bf1b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    description: 'Tangy, sour profile of raw tamarind preserved in an easy-to-use stable powder form.'
-  }
+  id: 2,
+  name: 'Raw Banana Powder',
+  category: 'Dehydrated Powders',
+  image: rawBananaPowder,
+  description: '100% natural raw banana powder rich in resistant starch and dietary fiber.'
+},
+{
+  id: 3,
+  name: 'Onion Powder',
+  category: 'Flakes & Granules',
+  image: onionPowder,
+  description: 'High quality dehydrated onion powder with strong aroma and excellent shelf life.'
+},
+{
+  id: 4,
+  name: 'Garlic Powder',
+  category: 'Spices Powder',
+  image: garlicPowder,
+  description: 'Pure garlic powder suitable for seasonings, sauces, snacks and food manufacturing.'
+},
+{
+  id: 5,
+  name: 'Tomato Powder',
+  category: 'Dehydrated Powders',
+  image: tomatoPowder,
+  description: 'Premium tomato powder made from carefully selected tomatoes for food processing applications.'
+},
+{
+  id: 6,
+  name: 'Turmeric Powder',
+  category: 'Spices Powder',
+  image: turmericPowder,
+  description: 'Natural turmeric powder with rich color and aroma suitable for global food markets.'
+}
 ];
 
 const Products: React.FC<ProductsProps> = ({ onSelectProduct }) => {
@@ -82,7 +87,7 @@ const Products: React.FC<ProductsProps> = ({ onSelectProduct }) => {
             </p>
           </div>
           <button 
-            onClick={() => handleEnquiryClick('Premium Green Banana Powder')} 
+            onClick={() => handleEnquiryClick('G9 Banana Powder')} 
             className="hidden md:inline-flex items-center font-medium text-primary-600 hover:text-primary-700 transition-colors group"
           >
             View All Products & Enquire
@@ -134,7 +139,7 @@ const Products: React.FC<ProductsProps> = ({ onSelectProduct }) => {
         
         <div className="mt-12 text-center md:hidden">
           <button 
-            onClick={() => handleEnquiryClick('Premium Green Banana Powder')} 
+            onClick={() => handleEnquiryClick('G9 Banana Powder')} 
             className="inline-flex items-center font-medium text-primary-600 hover:text-primary-700 transition-colors group"
           >
             View All Products & Enquire

@@ -2,24 +2,14 @@ import { Quote, Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Meena Tandan',
-    title: 'Skeptical at First, Now a Lifelong Partner',
-    content: 'Finding a reliable supplier felt impossible—hidden costs, inconsistent quality, and endless delays. But from my first order here, everything changed. Transparent pricing, flawless logistics, and products that exceeded expectations. Now, I don’t just trust them—I rely on them.'
+    name: 'Global Buyers',
+    title: 'Building Trust Through Quality',
+    content: 'Nutriva Global Export is currently expanding its international buyer network. We focus on consistent quality, transparent communication, and reliable bulk supply solutions.'
   },
   {
-    name: 'Shivam Dubey',
-    title: 'Quality That Speaks for Itself',
-    content: 'We’ve been in the agricultural trade for years, but sourcing premium-quality grains without compromise was a challenge. Then we found them. Every batch arrives fresh, pure, and exactly as promised. They don’t just sell products—they deliver excellence.'
-  },
-  {
-    name: 'Shreya Singh',
-    title: 'More Than a Supplier—A True Partner',
-    content: 'Most suppliers disappear after delivery, but not them. Their post-sale support, market insights, and commitment to long-term success make them more than just a trading company. They are partners who genuinely care about our growth.'
-  },
-  {
-    name: 'Rajat Kumar',
-    title: 'Deadlines Matter—And They Get It',
-    content: 'In this business, a single delay can cost thousands. With them, I never have to worry. Shipments arrive on time, every time, without excuses. They don’t just meet expectations—they redefine reliability.'
+    name: 'Export Partners',
+    title: 'Reliable Bulk Supply',
+    content: 'Our commitment is to provide premium quality powders, timely deliveries, and professional export support for global food manufacturers and distributors.'
   }
 ];
 
@@ -29,14 +19,14 @@ const Testimonials = () => {
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-primary-600 font-semibold tracking-wider uppercase text-sm mb-3 block">Testimonials</span>
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Voice Of Trust</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Why Buyers Choose Us</h2>
           <div className="flex justify-center mb-6 space-x-1">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
             ))}
           </div>
           <p className="text-gray-600 text-lg">
-            Don't just take our word for it. Hear from our global partners who have experienced our commitment to quality and service.
+            We are building long-term relationships with food manufacturers, importers, and distributors through quality products and reliable export services.
           </p>
         </div>
 
@@ -59,7 +49,7 @@ const Testimonials = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
-                  <span className="text-sm text-gray-500 font-medium">Verified Partner</span>
+                  <span className="text-sm text-gray-500 font-medium">Business Network</span>
                 </div>
               </div>
             </div>

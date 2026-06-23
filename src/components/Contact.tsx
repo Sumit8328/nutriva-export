@@ -12,7 +12,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct, setSelectedProduct }
     email: '',
     phone: '',
     company: '',
-    product: 'Premium Green Banana Powder',
+    product:'G9 Banana Powder',
     quantity: '',
     unit: 'Metric Tons',
     destinationPort: '',
@@ -88,7 +88,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct, setSelectedProduct }
       email: '',
       phone: '',
       company: '',
-      product: 'Premium Green Banana Powder',
+      product:'G9 Banana Powder',
       quantity: '',
       unit: 'Metric Tons',
       destinationPort: '',
@@ -116,13 +116,13 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct, setSelectedProduct }
               Request Your Bulk Quotation
             </h2>
             <p className="text-gray-600 text-lg mb-10 leading-relaxed">
-              Partner with Bulk In Global. Fill out our official export quotation form to receive a detailed cost sheet, including packing choices, shipping logistics (FOB / CIF), and analytical reports.
+              Partner with Nutriva Global Export. Fill out our official export quotation form to receive a detailed cost sheet, including packing choices, shipping logistics (FOB / CIF), and analytical reports.
             </p>
 
             <div className="space-y-8">
               {/* Card 1: Email */}
               <a 
-                href="mailto:bulkinglobal@gmail.com"
+                href="mailto:nutrivaglobalexport@gmail.com"
                 className="flex items-start p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary-200 hover:shadow-md hover:bg-primary-50/20 transition-all duration-300 group"
               >
                 <div className="bg-primary-100 text-primary-600 p-4 rounded-xl mr-5 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
@@ -130,25 +130,41 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct, setSelectedProduct }
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-950 mb-1 text-base">Direct Business Email</h4>
-                  <p className="text-gray-600 text-sm mb-0.5">bulkinglobal@gmail.com</p>
+                  <p className="text-gray-600 text-sm mb-0.5">nutrivaglobalexport@gmail.com</p>
                   <span className="text-xs text-primary-600 font-semibold tracking-wider uppercase">Inquiries answered in 12hrs</span>
                 </div>
               </a>
 
               {/* Card 2: Phone */}
-              <a 
-                href="tel:+918888006532"
-                className="flex items-start p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary-200 hover:shadow-md hover:bg-primary-50/20 transition-all duration-300 group"
-              >
-                <div className="bg-primary-100 text-primary-600 p-4 rounded-xl mr-5 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
-                  <Phone className="w-6 h-6" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-gray-950 mb-1 text-base">Call / WhatsApp Desk</h4>
-                  <p className="text-gray-600 text-sm mb-0.5">+91 8888006532</p>
-                  <span className="text-xs text-primary-600 font-semibold tracking-wider uppercase">Direct Export Manager Desk</span>
-                </div>
-              </a>
+<div className="flex items-start p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary-200 hover:shadow-md hover:bg-primary-50/20 transition-all duration-300 group">
+  <div className="bg-primary-100 text-primary-600 p-4 rounded-xl mr-5 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
+    <Phone className="w-6 h-6" />
+  </div>
+
+  <div>
+    <h4 className="font-bold text-gray-950 mb-1 text-base">
+      Call / WhatsApp Desk
+    </h4>
+
+    <a
+      href="tel:+918329095601"
+      className="block text-gray-600 text-sm hover:text-primary-600"
+    >
+      Sumit Kale: +91 8329095601
+    </a>
+
+    <a
+      href="tel:+917020169335"
+      className="block text-gray-600 text-sm hover:text-primary-600 mt-1"
+    >
+      Siddhesh Patil: +91 7020169335
+    </a>
+
+    <span className="text-xs text-primary-600 font-semibold tracking-wider uppercase">
+      Direct Export Manager Desk
+    </span>
+  </div>
+</div>
 
               {/* Card 3: Address */}
               <div className="flex items-start p-6 rounded-2xl bg-gray-50 border border-gray-100">
@@ -221,7 +237,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct, setSelectedProduct }
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      placeholder="e.g. John Doe"
+                      placeholder="Enter Full Name"
                       className={`w-full px-4 py-3 rounded-xl border bg-white focus:outline-none focus:ring-2 transition-all ${errors.name ? 'border-red-500 focus:ring-red-200' : 'border-gray-200 focus:ring-primary-100 focus:border-primary-600'}`}
                     />
                     {errors.name && <p className="text-red-500 text-xs mt-1.5 font-medium">{errors.name}</p>}
@@ -235,7 +251,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct, setSelectedProduct }
                       name="company"
                       value={formData.company}
                       onChange={handleInputChange}
-                      placeholder="e.g. Global Foods Ltd"
+                      placeholder="Company Name"
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-primary-100 focus:border-primary-600 transition-all"
                     />
                   </div>
@@ -250,7 +266,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct, setSelectedProduct }
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      placeholder="e.g. procurement@foodbrands.com"
+                      placeholder="Enter Business Email"
                       className={`w-full px-4 py-3 rounded-xl border bg-white focus:outline-none focus:ring-2 transition-all ${errors.email ? 'border-red-500 focus:ring-red-200' : 'border-gray-200 focus:ring-primary-100 focus:border-primary-600'}`}
                     />
                     {errors.email && <p className="text-red-500 text-xs mt-1.5 font-medium">{errors.email}</p>}
@@ -264,7 +280,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct, setSelectedProduct }
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      placeholder="e.g. +1 555-0199"
+                      placeholder="e.g. +91 70XXXXXX35"
                       className={`w-full px-4 py-3 rounded-xl border bg-white focus:outline-none focus:ring-2 transition-all ${errors.phone ? 'border-red-500 focus:ring-red-200' : 'border-gray-200 focus:ring-primary-100 focus:border-primary-600'}`}
                     />
                     {errors.phone && <p className="text-red-500 text-xs mt-1.5 font-medium">{errors.phone}</p>}
@@ -281,12 +297,12 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct, setSelectedProduct }
                       onChange={handleInputChange}
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-primary-100 focus:border-primary-600 transition-all font-medium text-gray-800"
                     >
-                      <option value="Premium Green Banana Powder">Premium Green Banana Powder</option>
+                      <option value="G9 Banana Powder">G9 Banana Powder</option>
+                      <option value="Raw Banana Powder">Raw Banana Powder</option>
+                      <option value="Onion Powder">Onion Powder</option>
                       <option value="Garlic Powder">Garlic Powder</option>
-                      <option value="Red Onion Granules">Red Onion Granules</option>
-                      <option value="Curry Leaves Powder">Curry Leaves Powder</option>
-                      <option value="Ginger Dehydrated Powder">Ginger Dehydrated Powder</option>
-                      <option value="Tamarind Powder">Tamarind Powder</option>
+                      <option value="Tomato Powder">Tomato Powder</option>
+                      <option value="Turmeric Powder">Turmeric Powder</option>
                     </select>
                   </div>
 
@@ -298,7 +314,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct, setSelectedProduct }
                       name="destinationPort"
                       value={formData.destinationPort}
                       onChange={handleInputChange}
-                      placeholder="e.g. Port of Rotterdam"
+                      placeholder="Destination Country / Port"
                       className={`w-full px-4 py-3 rounded-xl border bg-white focus:outline-none focus:ring-2 transition-all ${errors.destinationPort ? 'border-red-500 focus:ring-red-200' : 'border-gray-200 focus:ring-primary-100 focus:border-primary-600'}`}
                     />
                     {errors.destinationPort && <p className="text-red-500 text-xs mt-1.5 font-medium">{errors.destinationPort}</p>}
@@ -314,7 +330,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct, setSelectedProduct }
                       name="quantity"
                       value={formData.quantity}
                       onChange={handleInputChange}
-                      placeholder="Specify total quantity"
+                      placeholder="Required Quantity (KG / MT)"
                       className={`w-full px-4 py-3 rounded-xl border bg-white focus:outline-none focus:ring-2 transition-all ${errors.quantity ? 'border-red-500 focus:ring-red-200' : 'border-gray-200 focus:ring-primary-100 focus:border-primary-600'}`}
                     />
                     {errors.quantity && <p className="text-red-500 text-xs mt-1.5 font-medium">{errors.quantity}</p>}

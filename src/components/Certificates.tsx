@@ -11,38 +11,38 @@ interface Certificate {
 }
 
 const certificates: Certificate[] = [
-  {
-    id: 1,
-    title: 'FSSAI Registered',
-    subtitle: 'Food Safety Domestic Standard',
-    icon: <ShieldCheck className="w-8 h-8 text-primary-600 animate-pulse" />,
-    description: 'Complies fully with domestic food safety standards of India. Covers hygienic milling, packaging, and handling of our dehydrated items.',
-    status: 'Verified & Active'
-  },
-  {
-    id: 2,
-    title: 'ISO 22000:2018',
-    subtitle: 'Food Safety Management',
-    icon: <Award className="w-8 h-8 text-amber-500" />,
-    description: 'Certified framework for controlling food safety hazards. Guarantees that our global clients receive only consistent, contaminant-free batches.',
-    status: 'Standard Compliance'
-  },
-  {
-    id: 3,
-    title: 'APEDA Registration',
-    subtitle: 'Government Export Authority',
-    icon: <CheckCircle2 className="w-8 h-8 text-blue-500" />,
-    description: 'Registered under the Agricultural & Processed Food Products Export Development Authority of India, authorizing official global bulk supply.',
-    status: 'Licensed Exporter'
-  },
-  {
-    id: 4,
-    title: 'HACCP & GMP Standards',
-    subtitle: 'Manufacturing Cleanliness System',
-    icon: <FileText className="w-8 h-8 text-green-500" />,
-    description: 'Systematic protection against biological, chemical, and physical hazards in our processing lines, ensuring premium product purity.',
-    status: 'Strict QA Alignment'
-  }
+ {
+id: 1,
+title: 'FSSAI Registration',
+subtitle: 'Food Business Compliance',
+icon: <ShieldCheck className="w-8 h-8 text-primary-600" />,
+description: 'Registered food business operating under applicable food safety regulations.',
+status: 'Active'
+},
+{
+id: 2,
+title: 'GST Registered Business',
+subtitle: 'Business Tax Compliance',
+icon: <FileText className="w-8 h-8 text-blue-500" />,
+description: 'Registered business operating with applicable GST compliance.',
+status: 'Active'
+},
+{
+id: 3,
+title: 'Export Ready Operations',
+subtitle: 'International Trade Support',
+icon: <CheckCircle2 className="w-8 h-8 text-green-500" />,
+description: 'Focused on serving international buyers with documentation and export support.',
+status: 'Operational'
+},
+{
+id: 4,
+title: 'Quality Focused Operations',
+subtitle: 'Product Quality Standards',
+icon: <Award className="w-8 h-8 text-amber-500" />,
+description: 'Committed to quality sourcing, hygienic handling and customer satisfaction.',
+status: 'Operational'
+}
 ];
 
 const Certificates: React.FC = () => {
@@ -69,7 +69,7 @@ const Certificates: React.FC = () => {
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Corporate Compliance</h2>
           <p className="text-gray-600 text-lg">
-            Bulk In Global strictly operates under global food-grade protocols. Our processing and logistics pipelines are certified to ensure flawless, sterile bulk delivery.
+            We focus on quality sourcing, hygienic handling and reliable export operations for global buyers and food manufacturers.
           </p>
         </div>
 
@@ -115,7 +115,7 @@ const Certificates: React.FC = () => {
             <div className="flex-grow text-center md:text-left">
               <h4 className="text-xl font-bold text-gray-950 mb-2">Legal & Lab-Test Reports</h4>
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                All regulatory documents, lab phytosanitary certificates, analysis certificates, organic test grades, and export invoicing registrations are fully stored and verified. To request copies of official certificates for bulk orders, please submit a request to our compliance desk.
+                Product specifications, business registration details and available compliance documents can be shared with genuine buyers upon request.
               </p>
               <button 
                 onClick={handleScrollToContact}

@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  const [selectedProduct, setSelectedProduct] = useState<string>('Premium Green Banana Powder');
+  const [selectedProduct, setSelectedProduct] = useState<string>('G9 Banana Powder');
 
   return (
     <div className="min-h-screen bg-white selection:bg-primary-500 selection:text-white">

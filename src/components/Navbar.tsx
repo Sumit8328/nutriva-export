@@ -27,13 +27,13 @@ const Navbar = () => {
       <div className="bg-primary-900 text-white py-2 text-sm hidden md:block">
         <div className="container mx-auto px-4 flex justify-between items-center max-w-7xl">
           <div className="flex items-center space-x-6">
-            <a href="mailto:bulkinglobal@gmail.com" className="flex items-center hover:text-primary-300 transition-colors">
+            <a href="mailto:nutrivablobalexport@gmail.com" className="flex items-center hover:text-primary-300 transition-colors">
               <Mail className="w-4 h-4 mr-2" />
-              bulkinglobal@gmail.com
+              nutrivablobalexport@gmail.com
             </a>
-            <a href="tel:+918888006532" className="flex items-center hover:text-primary-300 transition-colors">
+            <a href="tel:+918329095601 | +91 7020169335" className="flex items-center hover:text-primary-300 transition-colors">
               <Phone className="w-4 h-4 mr-2" />
-              +91 8888006532
+              +91 8329095601,7020169335
             </a>
           </div>
           <div className="flex items-center space-x-4 text-primary-200">
@@ -49,8 +49,10 @@ const Navbar = () => {
               <Leaf className="w-6 h-6" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900 tracking-tight leading-none">Bulk In Global</h1>
-              <p className="text-xs text-primary-600 font-medium tracking-wider uppercase mt-1">Export Quality</p>
+              <h1 className="text-2xl font-bold text-gray-900 tracking-tight leading-none">Nutriva Global Export</h1>
+              <p className="text-xs text-primary-600 font-medium tracking-wider uppercase mt-1">
+  PREMIUM POWDER EXPORTER
+</p>
             </div>
           </div>
 
@@ -104,11 +106,11 @@ const Navbar = () => {
               ))}
             </nav>
             <div className="mt-auto flex flex-col space-y-4">
-              <a href="mailto:bulkinglobal@gmail.com" className="flex items-center text-gray-600">
-                <Mail className="w-5 h-5 mr-3 text-primary-600" /> bulkinglobal@gmail.com
+              <a href="mailto:nutrivablobalexport@gmail.com" className="flex items-center text-gray-600">
+                <Mail className="w-5 h-5 mr-3 text-primary-600" /> nutrivablobalexport@gmail.com
               </a>
-              <a href="tel:+918888006532" className="flex items-center text-gray-600">
-                <Phone className="w-5 h-5 mr-3 text-primary-600" /> +91 8888006532
+              <a href="tel:+91 8329095601 | +91 7020169335" className="flex items-center text-gray-600">
+                <Phone className="w-5 h-5 mr-3 text-primary-600" /> +91 8329095601 | +91 7020169335
               </a>
               <a href="#contact" className="bg-primary-600 text-white text-center px-6 py-3 rounded-xl font-medium mt-4">
                 Send Enquiry

@@ -22,16 +22,16 @@ const Footer = () => {
                 <Leaf className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-2xl font-bold tracking-tight text-white block">Bulk In Global</span>
-                <span className="text-xs text-primary-500 font-semibold uppercase tracking-widest mt-0.5 block">Export Quality Standards</span>
+                <span className="text-2xl font-bold tracking-tight text-white block">Nutriva Global Export</span>
+                <span className="text-xs text-primary-500 font-semibold uppercase tracking-widest mt-0.5 block">Premium Powder Exporter</span>
               </div>
             </div>
             <p className="text-sm leading-relaxed text-gray-400 max-w-sm">
-              India's premier certified supplier of premium Green Banana Powder and premium dehydrated agro-products, delivering pure, organic culinary ingredients to global enterprises.
+              Nutriva Global Export supplies premium quality Banana Powder, Raw Banana Powder, Onion Powder, Garlic Powder, Tomato Powder and Turmeric Powder for domestic and international markets.
             </p>
             <div className="pt-2 flex items-center space-x-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">
               <span className="flex h-2 w-2 rounded-full bg-green-500 mr-1 animate-pulse"></span>
-              India's Trusted Bulk Supplier
+              Premium Powder Exporter
             </div>
           </div>
 
@@ -41,32 +41,32 @@ const Footer = () => {
             <ul className="space-y-2.5 text-sm">
               <li>
                 <button onClick={() => handleScroll('products')} className="hover:text-primary-400 transition-colors text-left">
-                  Premium Green Banana Powder
+                  G9 Banana Powder
                 </button>
               </li>
               <li>
                 <button onClick={() => handleScroll('products')} className="hover:text-primary-400 transition-colors text-left">
-                  Dehydrated Garlic Powder
+                  Raw Banana Powder
                 </button>
               </li>
               <li>
                 <button onClick={() => handleScroll('products')} className="hover:text-primary-400 transition-colors text-left">
-                  Red Onion Granules
+                  Onion Powder
                 </button>
               </li>
               <li>
                 <button onClick={() => handleScroll('products')} className="hover:text-primary-400 transition-colors text-left">
-                  Curry Leaves Spice Powder
+                  Tomato Powder
                 </button>
               </li>
               <li>
                 <button onClick={() => handleScroll('products')} className="hover:text-primary-400 transition-colors text-left">
-                  Dehydrated Ginger Powder
+                  Garlic Powder
                 </button>
               </li>
               <li>
                 <button onClick={() => handleScroll('products')} className="hover:text-primary-400 transition-colors text-left">
-                  Hygienic Tamarind Powder
+                  Turmeric Powder
                 </button>
               </li>
             </ul>
@@ -110,14 +110,14 @@ const Footer = () => {
             <ul className="space-y-3.5 text-sm">
               <li className="flex items-start">
                 <Mail className="w-5 h-5 mr-3 text-primary-500 flex-shrink-0" />
-                <a href="mailto:bulkinglobal@gmail.com" className="hover:text-white transition-colors">
-                  bulkinglobal@gmail.com
+                <a href="mailto:nutrivaglobalexport@gmail.com" className="hover:text-white transition-colors">
+                  nutrivaglobalexport@gmail.com
                 </a>
               </li>
               <li className="flex items-start">
                 <Phone className="w-5 h-5 mr-3 text-primary-500 flex-shrink-0" />
-                <a href="tel:+918888006532" className="hover:text-white transition-colors">
-                  +91 8888006532
+                <a href="tel:+91 83290 95601+91 70201 69335" className="hover:text-white transition-colors">
+                  +91 83290 95601 +91 70201 69335
                 </a>
               </li>
               <li className="flex items-start">
@@ -134,11 +134,11 @@ const Footer = () => {
         {/* Bottom Panel */}
         <div className="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0">
           <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-6 text-gray-500">
-            <span>&copy; {currentYear} Bulk In Global. All rights reserved.</span>
+            <span>&copy; {currentYear} Nutriva Global Export. All rights reserved.</span>
             <span className="hidden md:inline">|</span>
-            <span className="flex items-center"><Shield className="w-3.5 h-3.5 mr-1" /> FSSAI Certified Operator</span>
+            <span className="flex items-center"><Shield className="w-3.5 h-3.5 mr-1" /> Quality Focused Business</span>
             <span className="hidden md:inline">|</span>
-            <span className="flex items-center"><Scale className="w-3.5 h-3.5 mr-1" /> Legal Global Exporter</span>
+            <span className="flex items-center"><Scale className="w-3.5 h-3.5 mr-1" /> Export Ready Operations</span>
           </div>
 
           <div className="flex space-x-6 text-gray-500">

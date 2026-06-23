@@ -14,17 +14,23 @@ interface GalleryItem {
 
 const galleryItems: GalleryItem[] = Object.entries(images).map(([path, url], index) => {
   const fileName = path.split('/').pop() ?? `Image ${index + 1}`;
-  const title = fileName.replace(/\.jpeg$/i, '').replace(/_/g, ' ');
+  const productTitles = [
+  'G9 Banana Powder',
+  'Raw Banana Powder',
+  'Onion Powder',
+  'Garlic Powder',
+  'Tomato Powder',
+  'Turmeric Powder'
+];
+const title = productTitles[index] || `Product ${index + 1}`;
   // Extract date and time from WhatsApp filename pattern
-  const match = fileName.match(/WhatsApp Image (\d{4}-\d{2}-\d{2}) at ([\d.]+ [AP]M)/);
-  const description = match
-    ? `Premium product showcase captured on ${match[1]} at ${match[2]}. Experience the excellence of our green banana powder.`
-    : 'Premium product image highlighting the superior quality of our green banana powder.';
+  const description =
+'Premium quality product suitable for bulk supply, food processing and international export markets.';
   return {
     id: index + 1,
     src: url as string,
     title,
-    tag: 'Gallery',
+    tag: 'Export Quality',
     description,
   } as GalleryItem;
 });
@@ -41,9 +47,9 @@ const Gallery: React.FC = () => {
           <span className="text-primary-600 font-semibold tracking-wider uppercase text-sm mb-3 block flex items-center justify-center">
             <Camera className="w-4 h-4 mr-2" /> Visual Sourcing Showcase
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">From Farm To Pure Powder</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Premium Product Gallery</h2>
           <p className="text-gray-600 text-lg">
-            Real, unedited photographs of our premium Green Banana Powder. Witness the immaculate purity and high-grade quality of our bulk export inventory.
+            Explore our premium range of export-quality powders including banana powder, onion powder, garlic powder, tomato powder and turmeric powder.
           </p>
         </div>
 

@@ -22,14 +22,14 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-[1.15] tracking-tight mb-6">
-              Premium Export <br className="hidden md:block"/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-amber-500">
-                Banana & Dehydrated
-              </span> <br className="hidden md:block"/> Powders Supplier
+             Premium <br className="hidden md:block"/>
+<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-amber-500">
+  Banana Powder
+</span> <br className="hidden md:block"/> Exporter
             </h1>
             
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-xl">
-              100% natural, farm-fresh, and globally certified. We supply premium Green Banana Powder alongside dehydrated vegetables, fruits, and organic spices to leading global food brands.
+              We export premium G9 Banana Powder, Raw Banana Powder, Onion Powder, Garlic Powder, Tomato Powder and Turmeric Powder. Supplying high-quality food ingredients to importers, distributors and food manufacturers worldwide.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -69,7 +69,7 @@ const Hero = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/5] md:aspect-square lg:aspect-[4/5] transform lg:-rotate-2 transition-transform duration-500 hover:rotate-0">
               <img 
                 src={bananaPowderBowl} 
-                alt="Bulk In Global Premium Banana Powder in Wooden Bowl"
+                alt="Nutriva Global Export Premium Banana Powder"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent"></div>
@@ -79,7 +79,7 @@ const Hero = () => {
                     <PackageCheck className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900">Bulk Ready</h3>
+                    <h3 className="font-bold text-gray-900">Export Ready</h3>
                     <p className="text-sm text-gray-500 mt-0.5">Export Quality Assured</p>
                   </div>
                 </div>
