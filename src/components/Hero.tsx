@@ -1,5 +1,10 @@
 import { ArrowRight, CheckCircle2, ShieldCheck, Truck, PackageCheck, Leaf } from 'lucide-react';
 import bananaPowderBowl from '../assets/banana-powder-bowl.jpg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectCoverflow } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
 
 const Hero = () => {
   return (
@@ -29,7 +34,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-xl">
-              We export premium G9 Banana Powder, Raw Banana Powder, Onion Powder, Garlic Powder, Tomato Powder and Turmeric Powder. Supplying high-quality food ingredients to importers, distributors and food manufacturers worldwide.
+              We export premium Green Banana Powder, Raw Banana Powder, Onion Powder, Garlic Powder, Tomato Powder and Turmeric Powder. Supplying high-quality food ingredients to importers, distributors and food manufacturers worldwide.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-10">

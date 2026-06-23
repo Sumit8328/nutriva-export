@@ -41,7 +41,7 @@ const Footer = () => {
             <ul className="space-y-2.5 text-sm">
               <li>
                 <button onClick={() => handleScroll('products')} className="hover:text-primary-400 transition-colors text-left">
-                  G9 Banana Powder
+                  Green Banana Powder
                 </button>
               </li>
               <li>

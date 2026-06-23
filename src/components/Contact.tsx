@@ -12,7 +12,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct, setSelectedProduct }
     email: '',
     phone: '',
     company: '',
-    product:'G9 Banana Powder',
+    product:'Green Banana Powder',
     quantity: '',
     unit: 'Metric Tons',
     destinationPort: '',
@@ -88,7 +88,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct, setSelectedProduct }
       email: '',
       phone: '',
       company: '',
-      product:'G9 Banana Powder',
+      product:'Green Banana Powder',
       quantity: '',
       unit: 'Metric Tons',
       destinationPort: '',
@@ -297,7 +297,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct, setSelectedProduct }
                       onChange={handleInputChange}
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-primary-100 focus:border-primary-600 transition-all font-medium text-gray-800"
                     >
-                      <option value="G9 Banana Powder">G9 Banana Powder</option>
+                      <option value="Green Banana Powder">Green Banana Powder</option>
                       <option value="Raw Banana Powder">Raw Banana Powder</option>
                       <option value="Onion Powder">Onion Powder</option>
                       <option value="Garlic Powder">Garlic Powder</option>

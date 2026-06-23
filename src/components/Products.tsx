@@ -22,10 +22,10 @@ interface ProductsProps {
 const products: Product[] = [
   {
     id: 1,
-    name: 'G9 Banana Powder',
+    name: 'Green Banana Powder',
     category: 'Dehydrated Powders',
     image: bananaPowderLeafClose,
-    description: 'Premium quality G9 banana powder processed hygienically for food, bakery and nutraceutical industries.'
+    description: 'Premium quality Green banana powder processed hygienically for food, bakery and nutraceutical industries.'
   },
   {
   id: 2,
@@ -87,7 +87,7 @@ const Products: React.FC<ProductsProps> = ({ onSelectProduct }) => {
             </p>
           </div>
           <button 
-            onClick={() => handleEnquiryClick('G9 Banana Powder')} 
+            onClick={() => handleEnquiryClick('Green Banana Powder')} 
             className="hidden md:inline-flex items-center font-medium text-primary-600 hover:text-primary-700 transition-colors group"
           >
             View All Products & Enquire
@@ -139,7 +139,7 @@ const Products: React.FC<ProductsProps> = ({ onSelectProduct }) => {
         
         <div className="mt-12 text-center md:hidden">
           <button 
-            onClick={() => handleEnquiryClick('G9 Banana Powder')} 
+            onClick={() => handleEnquiryClick('Green Banana Powder')} 
             className="inline-flex items-center font-medium text-primary-600 hover:text-primary-700 transition-colors group"
           >
             View All Products & Enquire
