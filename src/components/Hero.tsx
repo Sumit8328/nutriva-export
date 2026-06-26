@@ -1,10 +1,43 @@
-import { ArrowRight, CheckCircle2, ShieldCheck, Truck, PackageCheck, Leaf } from 'lucide-react';
-import bananaPowderBowl from '../assets/banana-powder-bowl.jpg';
+import {
+  ArrowRight,
+  CheckCircle2,
+  ShieldCheck,
+  Truck,
+  Leaf,
+  PackageCheck
+} from "lucide-react"; 
+import greenBanana from "../assets/hero/hero-green-banana-powder.jpg";
+import onionPowder from "../assets/hero/hero-onion-powder.jpg";
+import garlicPowder from "../assets/hero/hero-garlic-powder.jpg";
+import tomatoPowder from "../assets/hero/hero-tomato-powder.jpg";
+import turmericPowder from "../assets/hero/hero-turmeric-powder.jpg";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCoverflow } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
+const heroProducts = [
+  {
+    image: greenBanana,
+    title: "Green Banana Powder",
+  },
+  {
+    image: onionPowder,
+    title: "Onion Powder",
+  },
+  {
+    image: garlicPowder,
+    title: "Garlic Powder",
+  },
+  {
+    image: tomatoPowder,
+    title: "Tomato Powder",
+  },
+  {
+    image: turmericPowder,
+    title: "Turmeric Powder",
+  },
+];
 
 const Hero = () => {
   return (
@@ -34,7 +67,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-xl">
-              We export premium Green Banana Powder, Raw Banana Powder, Onion Powder, Garlic Powder, Tomato Powder and Turmeric Powder. Supplying high-quality food ingredients to importers, distributors and food manufacturers worldwide.
+              We export premium Green Banana Powder, Onion Powder, Garlic Powder, Tomato Powder and Turmeric Powder. Supplying high-quality food ingredients to importers, distributors and food manufacturers worldwide.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -71,26 +104,65 @@ const Hero = () => {
 
           <div className="relative lg:ml-auto w-full max-w-lg">
             {/* Main composition image */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/5] md:aspect-square lg:aspect-[4/5] transform lg:-rotate-2 transition-transform duration-500 hover:rotate-0">
-              <img 
-                src={bananaPowderBowl} 
-                alt="Nutriva Global Export Premium Banana Powder"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent"></div>
-              <div className="absolute bottom-6 left-6 right-6">
-                <div className="bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg flex items-center space-x-4">
-                  <div className="bg-primary-100 text-primary-600 p-3 rounded-lg">
-                    <PackageCheck className="w-6 h-6" />
+            <Swiper
+               modules={[Autoplay, EffectCoverflow]}
+               effect="coverflow"
+               centeredSlides={true}
+                slidesPerView={1.4}
+                loop={true}
+                autoplay={{
+                 delay: 2500,
+                 disableOnInteraction: false,
+               }}
+               coverflowEffect={{
+                 rotate: 0,
+                 stretch: 0,
+                 depth: 220,
+                 modifier: 2.2,
+                 scale: 0.82,
+                 slideShadows: false,
+               }}
+               className="w-full"
+             >
+               {heroProducts.map((product, index) => (
+                <SwiperSlide key={index}>
+                  <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
+                   <img
+                     src={product.image}
+                     alt={product.title}
+                     className="w-full h-full object-cover"
+                    />
+
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+                    <div className="absolute top-6 left-6 right-6 text-center">
+                      <h2 className="text-white text-3xl font-bold uppercase">
+                       {product.title}
+                      </h2>
+                      <p className="text-white/90 text-sm mt-1">
+                       Premium Export Quality
+                      </p>
+                    </div>
+
+                     <div className="absolute bottom-6 left-6 right-6">
+                       <div className="bg-white/95 backdrop-blur rounded-xl p-4 flex items-center gap-4">
+                        <div className="bg-green-100 p-3 rounded-lg">
+                         <PackageCheck className="w-6 h-6 text-green-700" />
+                        </div>
+
+                         <div> 
+                         <h3 className="font-bold">Export Ready</h3>
+                         <p className="text-sm text-gray-500">
+                          Global Bulk Supply
+                         </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-bold text-gray-900">Export Ready</h3>
-                    <p className="text-sm text-gray-500 mt-0.5">Export Quality Assured</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
+                </SwiperSlide>
+               ))}
+              </Swiper>
+          
             {/* Floating elements styling */}
             <div className="absolute -top-6 -right-6 bg-white p-4 rounded-xl shadow-xl animate-bounce-slow">
               <div className="flex items-center space-x-2">
