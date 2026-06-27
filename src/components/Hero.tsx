@@ -102,13 +102,13 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative lg:ml-auto w-full max-w-lg">
+          <div className="relative lg:ml-auto w-full max-w-[620px]">
             {/* Main composition image */}
             <Swiper
                modules={[Autoplay, EffectCoverflow]}
                effect="coverflow"
                centeredSlides={true}
-                slidesPerView={1.4}
+                slidesPerView={1.7}
                 loop={true}
                 autoplay={{
                  delay: 2500,
@@ -116,21 +116,21 @@ const Hero = () => {
                }}
                coverflowEffect={{
                  rotate: 0,
-                 stretch: 0,
-                 depth: 220,
-                 modifier: 2.2,
-                 scale: 0.82,
+                 stretch: -40,
+                 depth: 350,
+                 modifier: 2.8,
+                 scale: 0.78,
                  slideShadows: false,
                }}
                className="w-full"
              >
                {heroProducts.map((product, index) => (
                 <SwiperSlide key={index}>
-                  <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
+                  <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[620px]">
                    <img
                      src={product.image}
                      alt={product.title}
-                     className="w-full h-full object-cover"
+                     className="w-full h-full object-cover scale-110"
                     />
 
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
