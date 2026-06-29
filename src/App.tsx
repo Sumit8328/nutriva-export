@@ -8,7 +8,7 @@ import Certificates from './components/Certificates';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-
+import About from "./components/About";
 function App() {
   const [selectedProduct, setSelectedProduct] = useState<string>('G9 Banana Powder');
 
@@ -17,6 +17,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <About />
         <Features />
         <Products onSelectProduct={setSelectedProduct} />
         <Gallery />

@@ -67,7 +67,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-xl">
-              We export premium Green Banana Powder, Onion Powder, Garlic Powder, Tomato Powder and Turmeric Powder. Supplying high-quality food ingredients to importers, distributors and food manufacturers worldwide.
+              Supplying premium food ingredients to domestic businesses, exporters, importers, distributors and food manufacturers with reliable bulk supply.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-10">

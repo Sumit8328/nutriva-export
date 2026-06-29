@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Send, CheckCircle, ClipboardList, Globe2 } from 'lucide-react';
+import emailjs from "@emailjs/browser";
 
 interface ContactProps {
   selectedProduct?: string;
@@ -70,17 +71,41 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct, setSelectedProduct }
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!validate()) return;
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-    setLoading(true);
-    // Simulate API request delay
-    setTimeout(() => {
-      setLoading(false);
-      setIsSubmitted(true);
-    }, 1200);
-  };
+  if (!validate()) return;
+
+  setLoading(true);
+
+  try {
+    await emailjs.send(
+      "service_9rhfnab",      // Your Service ID
+      "template_dr7s1nr",     // Replace with your Template ID
+      {
+        name: formData.name,
+        company: formData.company,
+        email: formData.email,
+        phone: formData.phone,
+        product: formData.product,
+        quantity: formData.quantity,
+        unit: formData.unit,
+        country: formData.destinationPort,
+        packaging: formData.message,
+        message: formData.message,
+      },
+      "FOI6uOVtKA9eKUmGH"       // Replace with your Public Key
+    );
+
+    setLoading(false);
+    setIsSubmitted(true);
+
+  } catch (error) {
+    console.error("EmailJS Error:",error);
+    setLoading(false);
+    alert("Failed to send inquiry. Please try again.");
+  }
+};
 
   const resetForm = () => {
     setFormData({
