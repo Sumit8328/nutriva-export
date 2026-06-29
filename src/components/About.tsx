@@ -1,4 +1,3 @@
-import { Globe2, ShieldCheck, PackageCheck, Truck } from "lucide-react";
 import aboutImage from "../assets/hero/hero-green-banana-powder.jpg";
 
 const About = () => {
@@ -74,19 +73,5 @@ const About = () => {
     </section>
   );
 };
-<div className="flex flex-wrap gap-3 mt-8">
 
-  <span className="bg-green-50 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
-    ✔ Export Quality
-  </span>
-
-  <span className="bg-green-50 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
-    ✔ Bulk Supply
-  </span>
-
-  <span className="bg-green-50 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
-    ✔ Domestic & Global
-  </span>
-
-</div>
 export default About;
